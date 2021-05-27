@@ -1,0 +1,22 @@
+ul > li {
+
+
+    background-color: aqua;
+
+    width: 20px;
+
+    height: 20px;
+
+    border-radius: 50%;
+
+    margin: 10px;
+
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+.round {
+    border-radius: 50%;
+}
