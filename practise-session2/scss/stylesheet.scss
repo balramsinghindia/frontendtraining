@@ -1,0 +1,222 @@
+@import "reset";
+@import "color";
+@import "clearfix";
+@import "_fonts";
+
+@include reset-css;
+@include clearfix_mixin;
+
+*{
+    font-family: $myfont;
+}
+
+header{
+    background-color: $headerbgcolor;
+}
+
+footer{
+    margin-top: 50px;
+    background-color: $footercolor;
+}
+    
+body{
+    background-color: $maincolor;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 1225px;
+    width: 100%;  
+}
+
+.header__content{
+    margin: 0 auto;
+    max-width: 1225px;
+    width: 100%;
+}
+
+.footer__content{
+    margin: 0 auto;
+    max-width: 1225px;
+    width: 100%;
+    @media only screen and (max-width: 600px){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.header__logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 20px;
+    width: 166px;
+    background: $logocolor;
+    float:left;
+}
+
+.header__details{
+   float: right;
+   color: $logocolor;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.details{
+    margin-top: 30px;
+}
+.left_part{
+   width: 70%;
+   float: left;
+   margin-bottom: 10px;
+}
+.right_part{
+    width: 30%;
+    float: left;
+}
+
+.details__message{
+    font-size: 34px;
+    line-height: 43px;
+    color: $detailscolor;
+    margin-bottom: 12px;
+}
+
+.details__status{
+   float: right;
+   margin-top : 28px;
+   font-size: 14px;
+   line-height: 18px;
+}
+
+.reportblock{
+    margin-top: 35px;
+}
+
+.cards{
+    width: calc(25% - 19px);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    background-color: $logocolor;
+    margin-right: 21px;
+    float: left !important;
+}
+// .cards:last-child{
+//     margin-right: 0;
+// }
+
+.cards2{
+    width: calc(25% - 19px);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    background-color: $logocolor;
+    margin-right: 0px;
+    float: left !important;
+}
+
+.cards__image{
+  margin-top: 24px;
+  margin-left: 24px;
+}
+.cards__header{
+    margin-top: 8px;
+    margin-left: 24px; 
+    font-size: 24px;
+    line-height: 30px;
+    color: $detailscolor ;
+}
+.cards__count{
+    margin-top: 8px;
+    margin-left: 24px; 
+    font-size: 60px;
+    line-height: 75px;
+    color: $cardheadercolor;
+}
+.left_part__footer{
+    width: 50%;
+    float: left;
+}
+.right_part__footer{
+   width: 50%;
+   float: left;
+}
+.footer__copyright{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+.footer__company{
+    font-style: italic;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 8px;
+    margin-bottom: 26px;
+}
+.right_part__footer{
+    width: 18%;
+    float: right;
+    margin-top: 38px;
+}
+.footer__terms{
+    float: left;
+    display: inline;
+    margin-left: -60px;
+}
+.footer__policy{
+    float: right;
+    display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+   .header__details{
+       float: left;
+       margin-top: 0px !important;
+   }
+   .header__content{
+       padding-left: 15px;
+   }
+   .left_part{
+       width: 100%;
+   }
+   .right_part{
+       width: 100%;
+   }
+   .details{
+       padding-left: 15px;
+   }
+   .details__status{
+    float: left !important;
+   }
+   .reportblock{
+       margin-left: 10px;
+   }
+   .cards{
+       width: calc(50% - 30px);    
+       margin-bottom: 20px;
+       margin-left: 8px;
+   }
+   .cards__header{
+       font-size: 15px;
+   }
+   .cards2{
+       width: calc(50% - 30px);
+       margin-left: 8px;
+   }
+}
+
+//Carousel
+
+
+.Carousel-container{
+    margin-top: 10px;
+    background-color: $greycolor;
+    width: 100%;
+}
+
+.main-container{
+    margin: 0 auto;
+    max-width: 1225px;
+    width: 100%;
+}
