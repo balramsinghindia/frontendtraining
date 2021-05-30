@@ -45,7 +45,11 @@ header {
           box-sizing: border-box; }
 
 main {
-  background: #e7f6fa; }
+  /*
+    background: #e7f6fa; */
+  background: -webkit-gradient(linear, left top, left bottom, from(#F4F5F9), to(rgba(244, 245, 249, 0)));
+  background: -o-linear-gradient(top, #F4F5F9 0%, rgba(244, 245, 249, 0) 100%);
+  background: linear-gradient(180deg, #F4F5F9 0%, rgba(244, 245, 249, 0) 100%); }
 
 legend {
   font-family: Source Sans Pro;
@@ -207,10 +211,10 @@ body {
     margin-top: 167px;
     margin-left: 18px; }
   .section-two .card__margin-three {
-    margin-top: 37px;
+    margin-top: -38px;
     margin-right: 18px; }
   .section-two .card__margin-four {
-    margin-top: 39px;
+    margin-top: 78px;
     margin-left: 18px;
     margin-bottom: 117px; }
 
@@ -324,26 +328,33 @@ display: flex;
 justify-content: space-between; */ }
 
 .footer-section {
-  width: 100%;
+  width: 50%;
+  float: left;
   max-width: 1440px;
   margin: 0 auto; }
 
 .align-copyright {
-  padding: 2rem;
-  font-style: normal;
-  line-height: 28px;
+  padding-left: 51px;
+  padding-top: 25px;
   float: left;
-  width: 25%; }
+  width: 30%; }
 
 .align-company {
-  padding: 0 0 2rem 2rem;
+  padding-left: 51px;
   font-style: italic;
   font-weight: 400;
   line-height: 18px;
-  float: left;
+  float: none;
   width: 25%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+.align-terms {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 26px; }
 
 a {
   text-decoration: none;
@@ -359,3 +370,106 @@ a {
 
 .policy {
   display: contents; }
+
+@media only screen and (max-width: 600px) {
+  header {
+    text-align: center; }
+    header .header {
+      padding-left: 0px;
+      padding-right: 0px; }
+      header .header__link-checker {
+        color: #FFF;
+        font-size: 20px;
+        width: auto;
+        padding: 1.25rem 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+      header .header__link-expire {
+        color: #FFF;
+        padding: 1.25rem 0;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        text-align: center;
+        width: auto; }
+  .clearfix {
+    display: grid; }
+  .main-content {
+    padding: 35px; }
+  .section-one {
+    float: none;
+    width: 100%; }
+    .section-one form {
+      margin-top: 0px; }
+      .section-one form legend {
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 46px;
+        color: #0A1D41; }
+  .section-two {
+    width: 100%; }
+    .section-two .card__margin-one {
+      margin-left: 0px; }
+    .section-two .card-floats {
+      /* padding: 10px; */
+      /* width: calc(45% - 14px); */
+      /* float: left; */
+      /* max-width: 277px; */
+      /* box-sizing: border-box; */
+      width: 100%;
+      max-width: 100%;
+      text-align: center; }
+    .section-two .card__title {
+      font-family: SourceSansPro-Light;
+      font-weight: 600;
+      color: #0A1D41;
+      width: 100%;
+      max-width: 100%;
+      padding-left: 26px;
+      padding-top: 20px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+    .section-two .card__subtitle {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 26px;
+      color: #292929;
+      max-width: 100%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-left: 26px;
+      padding-bottom: 25px; }
+    .section-two .card__margin-two {
+      margin-top: 80px;
+      margin-left: 0px; }
+    .section-two .card__margin-three {
+      margin-top: 80px;
+      /* margin-right: 18px; */ }
+    .section-two .card__margin-four {
+      margin-left: 0px;
+      margin-top: 80px;
+      margin-bottom: 80px; }
+  .section-three {
+    width: 100%;
+    margin-bottom: 50px; }
+  .margin-r49 {
+    margin-right: 0px; }
+  .footer-section {
+    text-align: center; }
+  .align-terms {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding-top: 54px;
+    margin: 0 auto; }
+  .align-copyright {
+    width: auto;
+    float: none; }
+  .align-company {
+    width: auto;
+    float: none; }
+  a {
+    display: block;
+    width: auto;
+    float: none; } }
