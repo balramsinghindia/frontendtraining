@@ -88,7 +88,7 @@ box-sizing: border-box;
 border-radius: 8px; */
 
 background: #FFF;
-border: 1px solid #1770F9;
+border: 1px solid #C4C4C4;
 box-sizing: border-box;
 border-radius: 8px;
 width: 100%;
@@ -97,6 +97,10 @@ height: 60px;
 margin-bottom: 40px;
 padding: 20px;
 letter-spacing: 4px;
+
+  &:hover {
+    border: 1px solid #1770F9;
+  }
 }
 
 input[type="url"] {
@@ -106,7 +110,7 @@ border: 1px solid #1770F9;
 box-sizing: border-box;
 border-radius: 8px; */
 background: #FFF;
-border: 1px solid #1770F9;
+border: 1px solid #C4C4C4;
 box-sizing: border-box;
 border-radius: 8px;
 width: 100%;
@@ -115,13 +119,15 @@ height: 60px;
 margin-bottom: 40px;
 padding: 20px;
 letter-spacing: 4px;
-}
 
-input :focus {
 
+&:hover {
     border: 1px solid #1770F9;
-    outline: none;
+  }
+ 
 }
+
+
 
 input[type="checkbox"] {
 background: #FFFFFF;
