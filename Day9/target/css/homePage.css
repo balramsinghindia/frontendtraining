@@ -173,7 +173,8 @@ input[name="submit"] {
   color: #1770F9;
   padding: 20px 67px 20px 60px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  outline: none; }
 
 .modelcontent {
   /*background-color: rgba(10,10,10,0.6); */
