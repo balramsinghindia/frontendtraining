@@ -75,17 +75,12 @@ color: #0A1D41;
 .formTopic {
 font-style: normal;
 font-weight: normal;
-font-size: 18px;
+font-size: 17px;
 line-height: 28px;
 color: #292929;
 }
 
 input[type="email"] {
-    /*
-background: #FFFFFF;
-border: 1px solid #1770F9;
-box-sizing: border-box;
-border-radius: 8px; */
 font-style: normal;
 font-weight: 600;
 font-size: 16px;
@@ -142,7 +137,44 @@ border: 1px solid #1770F9;
 box-sizing: border-box;
 border-radius: 8px;
 cursor: pointer;
+display: none;
 }
+
+
+input[type="checkbox"] + label {
+  
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+  }
+
+
+  input[type="checkbox"] + label:before {
+    content: "\2713";
+    border: 0.1px solid  #1770F9;
+    border-radius: 2px;
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.75em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: 0.2s;
+    opacity: 0.35;
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    background-color:  #1770F9;
+    border-color:  #1770F9;
+    color: #FFFFFF;
+    opacity: 0.9;
+  }
+
+  input[type="checkbox"] + label:active:before {
+    transform: scale(0);
+  }
 
 label{
     cursor: pointer;
