@@ -72,6 +72,12 @@ background: #FFFFFF;
 border: 1px solid #1770F9;
 box-sizing: border-box;
 border-radius: 8px; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.11em;
+  color: #090909;
   background: #FFF;
   border: 1px solid #C4C4C4;
   -webkit-box-sizing: border-box;
@@ -87,11 +93,12 @@ border-radius: 8px; */
     border: 1px solid #1770F9; }
 
 input[type="url"] {
-  /*
-background: #FFFFFF;
-border: 1px solid #1770F9;
-box-sizing: border-box;
-border-radius: 8px; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.11em;
+  color: #090909;
   background: #FFF;
   border: 1px solid #C4C4C4;
   -webkit-box-sizing: border-box;
