@@ -176,6 +176,15 @@ input[name="submit"] {
           box-sizing: border-box;
   outline: none; }
 
+::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.11em;
+  color: #090909;
+  opacity: 0.3; }
+
 .modelcontent {
   /*background-color: rgba(10,10,10,0.6); */
   text-align: center;
