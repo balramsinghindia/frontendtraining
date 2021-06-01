@@ -111,14 +111,19 @@ input[type="checkbox"] {
   border: 1px solid #1770F9;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 8px; }
+  border-radius: 8px;
+  cursor: pointer; }
+
+label {
+  cursor: pointer; }
 
 input[type="submit"] {
   background: #FFFFFF;
   border: 1px solid #1770F9;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 8px; }
+  border-radius: 8px;
+  cursor: pointer; }
 
 input[name="submit"] {
   font-style: normal;

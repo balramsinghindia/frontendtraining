@@ -134,6 +134,11 @@ background: #FFFFFF;
 border: 1px solid #1770F9;
 box-sizing: border-box;
 border-radius: 8px;
+cursor: pointer;
+}
+
+label{
+    cursor: pointer;
 }
 
 input[type="submit"] {
@@ -141,6 +146,7 @@ background: #FFFFFF;
 border: 1px solid #1770F9;
 box-sizing: border-box;
 border-radius: 8px;
+cursor: pointer;
 }
 
 input[name="submit"] {
