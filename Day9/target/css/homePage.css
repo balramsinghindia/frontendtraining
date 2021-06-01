@@ -473,7 +473,8 @@ a {
         line-height: 46px;
         color: #0A1D41; }
   .section-two {
-    width: 100%; }
+    width: 90%;
+    margin: 0 auto; }
     .section-two .card__margin-one {
       margin-left: 0px; }
     .section-two .card-floats {
