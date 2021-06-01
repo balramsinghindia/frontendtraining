@@ -88,7 +88,8 @@ border-radius: 8px; */
   height: 60px;
   margin-bottom: 40px;
   padding: 20px;
-  letter-spacing: 4px; }
+  letter-spacing: 4px;
+  outline: none; }
   input[type="email"]:hover {
     border: 1px solid #1770F9; }
 
@@ -109,7 +110,8 @@ input[type="url"] {
   height: 60px;
   margin-bottom: 40px;
   padding: 20px;
-  letter-spacing: 4px; }
+  letter-spacing: 4px;
+  outline: none; }
   input[type="url"]:hover {
     border: 1px solid #1770F9; }
 
