@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+ 
+  
     <link rel="stylesheet" href="./target/css/reset.min.css">
     <link rel="stylesheet" href="./target/css/homePage.min.css">
 </head>
@@ -16,8 +18,6 @@
         <div class="header clearfix">
 
             <h1 class="header__link-checker">Link Checker</h1>
-
-
 
             <P class="header__link-expire">Link Expires in 18hrs (11 Mar 2021 02:48 pm)</P>
    
@@ -33,12 +33,19 @@
                           <fieldset>
                            <legend>BrokenLinks are bad for business</legend>
                             
-                           <p class="formTopic">Improve your business with our inch perfect scan reports - check all pages by searching for issues and detect invalid webpage references on your website.</p>     
-                           <p class="section-one__form-label">Enter your email and URL below (e.g. www.example.com)</p> </br> 
-                           <input type="email" name="link-checker__email" id="email" placeholder="Enter your email" /> </br>
-                           <input type="url" name="link-checker__url" placeholder="Enter your URL" />  </br>
+                           <p class="section-one__form-topic">Improve your business with our inch perfect scan reports - check all pages by searching for issues and detect invalid webpage references on your website.</p>     
+                           <p class="section-one__form-label">Enter your email and URL below (e.g. www.example.com)</p>  
+                           <div class="section-one__input-one">
+                            <input type="email" name="link-checker__email" id="email" placeholder="Enter your email" />
+                             <img class="section-one__image-one" alt="message-box" title="message-icon" src="./images/message-input.png"/>
+                           </div>
+                           <div class="section-one__input-two">
+                            <input type="url" name="link-checker__url" placeholder="Enter your URL" /> 
+                            <img class="section-one__image-one" alt="message-box" title="message-icon" src="./images/link.svg"/> 
+
+                           </div>
                            <input type="checkbox" name="link-checker__checkbox" id="link-checker__checkbox" class="checkbox-one" /> 
-                           <label class="formTopic" for="link-checker__checkbox">By entering your URL you agree to these <u>Terms & Conditions</u></label> <br>
+                           <label class="formTopic" for="link-checker__checkbox">By entering your URL you agree to these <u>Terms & Conditions</u></label> 
                           
                            <input type="submit" name="submit"/>
                        </fieldset>
@@ -75,10 +82,10 @@
                 <div class="clearfix">
                   <section class="section-three margin-r49">
                                    <img src="./images/Rectangle 214.svg" alt="Rectangle_backgroung"   title="rectangle-background">
-                                   <h1  >Easily find broken links &
+                                   <h1 >Easily find broken links &
                                       resolve instantly</h1>
                                       <h3>Lorem ipsum</h3>
-                                   <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sagittis, a, tortor, mauris, at egestas convallis. Eu, nunc ut odio in pulvinar mattis tellus velit diam. </p>
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sagittis, a, tortor, mauris, at egestas convallis. Eu, nunc ut odio in pulvinar mattis tellus velit diam. </p>
                
                      
                   </section>
@@ -98,23 +105,21 @@
          </main>
         
 
-           <footer class="clearfix">
+        <footer>
             <div class="footer-section clearfix">
-
+                        <div class="footer-section__left">
                             <p class="align-copyright">Copyright © 2021  Linkchecker</p>   
                             <p class="align-company">powered by hashout</p> 
+                        </div>
+                            
                            
-                           
-
-            </div>
-            <div class="align-terms">
-                <a href="#">Terms and  Conditions</a>
-                <a href="#" class="policy">Privacy Policy</a>
-
-            </div>
-
-        
-</footer>
+                            <div class="footer-section__right">
+                                <a href="#">Terms and  Conditions</a>
+                                <a href="#" class="policy">Privacy Policy</a>
+                
+                            </div>      
+             </div>
+          </footer>
 </body>
 </html>
 
