@@ -47,9 +47,9 @@ header {
 
 .main-content {
   max-width: 1440px;
+  padding: 25px;
   margin: 0 auto;
   width: 100%;
-  padding: 50px 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -205,7 +205,8 @@ input[name="submit"] {
   padding: 20px 67px 20px 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: none; }
+  outline: none;
+  margin-top: 26px; }
 
 ::-webkit-input-placeholder {
   font-style: normal;
@@ -319,7 +320,8 @@ input[name="submit"] {
     width: 100%; }
 
 .margin-r49 {
-  margin-right: 49px; }
+  margin-right: 49px;
+  margin-bottom: 50px; }
 
 .background3-4 {
   background: #FFFFFF;
@@ -355,7 +357,7 @@ box-shadow: 10px 10px 10px 10px #888888;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  color: #000000;
+  color: #0A1D41;
   width: 100%;
   max-width: 255px;
   padding-left: 26px;
@@ -368,7 +370,7 @@ box-shadow: 10px 10px 10px 10px #888888;
   font-weight: 300;
   font-size: 16px;
   line-height: 26px;
-  color: #090909;
+  color: #292929;
   max-width: 245px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -384,24 +386,27 @@ strong {
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
-  color: #000000; }
+  color: #0A1D41; }
 
 footer {
-  background: #FFFFFF;
-  /*
-display: flex;
-justify-content: space-between; */ }
+  background: #FFFFFF; }
 
 .footer-section {
   max-width: 1440px;
   margin: 0 auto; }
   .footer-section__left {
     float: left;
-    width: 50%; }
+    width: 50%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 25px; }
   .footer-section__right {
     float: left;
     width: 50%;
-    text-align: right; }
+    text-align: right;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-right: 25px; }
   .footer-section a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
@@ -414,13 +419,11 @@ justify-content: space-between; */ }
   .footer-section .policy {
     margin-left: 48px; }
 
-.align-copyright {
-  padding-left: 51px;
+.footer-section__left__align-copyright {
   padding-top: 25px;
   padding-bottom: 10px; }
 
-.align-company {
-  padding-left: 51px;
+.footer-section__left__align-company {
   font-style: italic;
   font-weight: 400;
   line-height: 18px; }
@@ -440,7 +443,7 @@ input::after {
 input {
   position: relative; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px), (max-width: 992px) {
   header {
     text-align: center; }
     header .header {
@@ -477,23 +480,18 @@ input {
         line-height: 46px;
         color: #0A1D41; }
   .section-two {
-    width: 90%;
+    width: 100%;
     margin: 0 auto; }
     .section-two .card__margin-one {
       margin-left: 0px; }
     .section-two .card-floats {
-      /* padding: 10px; */
-      /* width: calc(45% - 14px); */
-      /* float: left; */
-      /* max-width: 277px; */
-      /* box-sizing: border-box; */
       width: 100%;
       max-width: 100%;
       text-align: center; }
     .section-two .card__title {
       font-family: 'SourceSansPro-Regular';
       font-weight: 600;
-      color: #000000;
+      color: #0A1D41;
       width: 100%;
       max-width: 100%;
       padding-left: 26px;
@@ -505,7 +503,7 @@ input {
       font-weight: 300;
       font-size: 16px;
       line-height: 26px;
-      color: #090909;
+      color: #292929;
       max-width: 100%;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
@@ -516,7 +514,6 @@ input {
       margin-left: 0px; }
     .section-two .card__margin-three {
       margin-top: 80px;
-      /* margin-right: 18px; */
       margin-left: 0px;
       margin-right: 0px; }
     .section-two .card__margin-four {
@@ -539,13 +536,24 @@ input {
   .footer-section__left {
     float: none;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    padding-left: 0; }
+    .footer-section__left__align-copright {
+      width: auto;
+      float: none;
+      padding: 0px; }
+    .footer-section__left__align-company {
+      width: auto;
+      float: none;
+      padding-left: 0px;
+      padding-top: 10px; }
   .footer-section__right {
     float: none;
     width: auto;
     text-align: center;
     display: block;
-    padding-top: 10px; }
+    padding-top: 10px;
+    padding-right: 0px; }
     .footer-section__right .policy {
       margin-left: 0; }
     .footer-section__right a {
@@ -556,15 +564,6 @@ input {
       line-height: 28px;
       display: block;
       padding-top: 2px; }
-  .align-copyright {
-    width: auto;
-    float: none;
-    padding: 0px; }
-  .align-company {
-    width: auto;
-    float: none;
-    padding-left: 0px;
-    padding-top: 10px; }
   a {
     display: block;
     width: auto;
