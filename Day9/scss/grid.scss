@@ -14,7 +14,7 @@
 
 
 body {
-      position: relative;
+position: relative;
 background: linear-gradient(180deg, #F4F5F9 0%, rgba(244, 245, 249, 0) 100%);
 }
 
@@ -32,8 +32,7 @@ background-color: $header-color;
 
     &__link-checker {
 
-    float:left;
-    width: 50%;
+    display: grid;
     color:$link-checker-color;
        
     font-size: 20px;
@@ -43,8 +42,7 @@ background-color: $header-color;
 
     &__link-expire {
 
-    float: right;
-    width: 50%;
+    display: grid;
     color: $link-checker-color;
     padding: 1.25rem 0rem;
     box-sizing: border-box;
@@ -54,11 +52,7 @@ background-color: $header-color;
 }
 }
 
-.clearfix::after {
-content: "";
-clear: both;
-display: table;
-}
+
 
 .main-content {
 max-width: 1440px;
@@ -72,15 +66,9 @@ main {
     background: linear-gradient(180deg, #F4F5F9 0%, rgba(244, 245, 249, 0) 100%);
 }
 
-.clearfix ::after {
-    content: "";
-    clear: both;
-    display: table;
-    }
-        
+   
 .section-one {
-    width: 60%;
-    float: left;
+  display: grid;
       
     form {
         margin-top: 130px;
@@ -110,9 +98,6 @@ main {
       &__input-one {
           position: relative;
       }
-      &__input-two {
-          position: relative;
-      }
       &__image-one {
           position: absolute;
       }
@@ -120,15 +105,7 @@ main {
           position: absolute;
       }
       &__image-one {
-        filter: grayscale(100%);
-        top: 20px;
-        right: 20px;
-      }
-
-      &__image-two {
-        filter: grayscale(100%);
-        top: 20px;
-        right: 20px;
+          filter: grayscale(100%);
       }
     input:focus {
         input:focus::after {filter: grayscale(0)}
@@ -202,8 +179,8 @@ content: "\2713";
 border: 1.2px solid  $primary-blue;
 border-radius: 2px;
 display: inline-block;
-width: 1em;
-height: 1em;
+width: 1.3em;
+height: 1.3em;
 padding-left: 0.2em;
 padding-bottom: 0.3em;
 margin-right: 0.75em;
@@ -306,8 +283,7 @@ background-color: rgba(10,10,10,0.6);
 }
 
 .section-two {
-width: 40%;
-float: left;
+display: grid;
 
 .card__margin-one {
     margin-top: 102px;
@@ -330,8 +306,7 @@ margin-left: 32px;
 }
 
 .section-three {
-    width: 50%;
-    float: left;
+    display: grid;
     background: $card-background;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
@@ -381,8 +356,7 @@ box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);
 border-radius: 8px;
 }
 .section-four {
-    width: 50%;
-    float: left;
+    display: grid;
 }
 .card {
 background: $card-background;
@@ -394,7 +368,7 @@ border-radius: 8px;
 .card-floats {
     padding: 10px;
     width: calc(45% - 14px);
-    float: left;
+    display: grid;
     max-width: 277px;
     box-sizing: border-box;
 }
@@ -454,19 +428,16 @@ background: $card-background;
     max-width: 1440px;
     margin: 0 auto;
     &__left{
-        float: left;
-        width: 50%;
+       display: grid;
         box-sizing: border-box;
         padding-left: 25px;
     }
 
     &__right {
-        float: left;
-        width: 50%;
+        display: grid;
         text-align: right; 
         box-sizing: border-box;
         padding-right: 25px; 
-        padding-top: 6px;
       }
 
     a{
@@ -489,13 +460,11 @@ background: $card-background;
 .footer-section__left {
 
     &__align-copyright{
-        padding-top: 26px;
+        padding-top: 25px;
         padding-bottom: 10px;  
     }
 
     &__align-company {
-        padding-top: 2px;
-        padding-bottom: 26px;
         font-style: italic;
         font-weight: 400;
         line-height: 18px;
@@ -504,8 +473,7 @@ background: $card-background;
 
 
 .align-terms {
-    float: left;
-    width: 50%;
+   
     text-align: center;
     padding-top: 20px;
     padding-bottom: 26px;
@@ -559,8 +527,7 @@ header {
       }
 
     .section-one {
-        float: none;
-        width: 100%;
+        display: grid;
 
     form {
          margin-top: 0px;
@@ -651,27 +618,23 @@ header {
     }
 
     .align-terms {
-    float: left;
-    width: 50%;
+     display: grid;
     padding-top: 10px;
     margin: 0 auto;
     }
 
     .footer-section__left{
-    float: none;
-    width: 100%;
+    display: grid;
     text-align: center;
     padding-left: 0;
 
     &__align-copright{
-    width: auto;
-    float: none;
+    
     padding: 0px;
     }
 
     &__align-company {
-    width: auto;
-    float: none;
+    
     padding-left: 0px;
     padding-top: 10px;
     }
@@ -679,8 +642,7 @@ header {
     }
 
     .footer-section__right{
-    float: none;
-    width: auto;
+   
     text-align: center;
     display: block;
     padding-top: 10px;
@@ -703,7 +665,6 @@ header {
    
     a{
     display: block;
-    width: auto;
-    float: none;
+    
        }
 } 
