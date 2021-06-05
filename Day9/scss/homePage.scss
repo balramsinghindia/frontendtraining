@@ -15,40 +15,56 @@
 
 body {
       position: relative;
-background: linear-gradient(180deg, #F4F5F9 0%, rgba(244, 245, 249, 0) 100%);
 }
 
 header{
 background-color: $header-color;
+
+@media only screen and (max-width :992px) {
+    text-align: center;
+}
 
     
 .header {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 21px;
+    padding-right: 21px;
     box-sizing: border-box;
 
-    &__link-checker {
+ @media only screen and (max-width: 992px) {
+    padding-left: 0px;
+    padding-right: 0px;
+ }   
 
+    &__link-checker {
     float:left;
     width: 50%;
     color:$link-checker-color;
-       
     font-size: 20px;
     padding: 1.25rem 0rem; 
     box-sizing: border-box;
-    }
+
+@media only screen and (max-width: 992px)  {
+        width: 100%;
+}
+   }
 
     &__link-expire {
-
     float: right;
     width: 50%;
     color: $link-checker-color;
     padding: 1.25rem 0rem;
+    padding-right: 34px;
     box-sizing: border-box;
     text-align: right;
+
+ @media only screen and (max-width : 992px)  {
+    text-align: center;
+    width: 100%;
+    padding: 1.25rem 0 1.25rem 0;
+}   
     }
     
 }
@@ -67,9 +83,15 @@ margin: 0 auto;
 width: 100%;   
 box-sizing: border-box;
 
+@media only screen and (max-width : 992px) {
+padding: 35px;
+}
+
  }
 main {
-    background: linear-gradient(180deg, #F4F5F9 0%, rgba(244, 245, 249, 0) 100%);
+    
+    background: linear-gradient( #ebf1ffcf 0%, rgba(244, 245, 249, 1) 100%); 
+    
 }
 
 .clearfix ::after {
@@ -81,10 +103,17 @@ main {
 .section-one {
     width: 60%;
     float: left;
+@media only screen and (max-width :992px) {
+    float: none;
+    width: 100%;
+}
       
     form {
         margin-top: 130px;
         max-width: 558px;
+@media only screen and (max-width : 992px) {
+        margin-top: 0px;
+}
     }
     legend {
         font-family: $link-checker-font;
@@ -93,7 +122,16 @@ main {
         font-size: 36px;
         line-height: 46px;
         color: $legend-color;
-        }
+ @media only screen and (max-width : 992px) {
+    legend {
+       font-style: normal;
+       font-weight: 600;
+       font-size: 35px;
+       line-height: 46px;
+       color:$legend-color;
+           }
+ }       
+}
 
     &__form-topic{
         font-family: $link-checker-font;
@@ -264,7 +302,6 @@ margin-top: 26px;
 }
 
 .modelcontent {
-/*background-color: rgba(10,10,10,0.6); */
 text-align:center;
 background: $card-background;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
@@ -287,8 +324,6 @@ align-items: center;
 }
 
 .modelcontent {
-/* max-width: 500px; */
-/* margin: 0 auto; */
 text-align: center;
 background: $card-background;
 -webkit-box-shadow: 0 4px 10px rgba(0,0,0,.05);
@@ -314,23 +349,47 @@ background-color: rgba(10,10,10,0.6);
 width: 40%;
 float: left;
 
+@media only screen and (max-width :992px) {
+width:100%;
+margin: 0 auto;
+
+}
+
 .card__margin-one {
     margin-top: 102px;
     margin-left: 18px;
+@media only screen and (max-width : 992px) {
+    margin-left: 0px;
+}    
+
 }
 
 .card__margin-two {
 margin-top: 167px;
 margin-left: 32px;
+@media only screen and (max-width : 992px) {
+    margin-top: 80px;
+    margin-left: 0px;
+}
 }
 .card__margin-three {
     margin-top: -44px;
     margin-left: 18px;
+@media only screen and (max-width :992px) {
+    margin-top: 80px;
+    margin-left: 0px;
+    margin-right: 0px;
+}    
 }
 .card__margin-four {
     margin-top: 36px;
     margin-left: 36px;
     margin-bottom: 117px;
+@media only screen and (max-width : 992px) {
+    margin-left: 0px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}    
 }
 }
 
@@ -341,6 +400,10 @@ margin-left: 32px;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
     width: calc(50% - 25px);
+@media only screen and (max-width :992px){
+    width: 100%;
+    margin-bottom: 50px;    
+}    
  
 h1 {
     font-family: $link-checker-font ;
@@ -382,6 +445,9 @@ p {
 .margin-r49 {
     margin-right: 49px;
     margin-bottom: 50px;
+@media only screen and (max-width : 992px) {
+    margin-right: 0px;
+}    
 }
 .background3-4{
 background: $card-background;
@@ -394,9 +460,7 @@ border-radius: 8px;
 }
 .card {
 background: $card-background;
-/*
-box-shadow: 10px 10px 10px 10px #888888;
-*/
+
 border-radius: 8px;
 }
 .card-floats {
@@ -405,6 +469,12 @@ border-radius: 8px;
     float: left;
     max-width: 277px;
     box-sizing: border-box;
+
+@media only screen and (max-width : 992px) {
+    width:100% ;
+    max-width:100%;
+    text-align: center;
+}    
 }
 .card {
     img {
@@ -426,6 +496,11 @@ border-radius: 8px;
         padding-left: 26px;
         padding-top: 20px;
         box-sizing: border-box;
+    @media only screen and (max-width : 992px){
+    width: 100%;
+    max-width: 100%;
+   
+    }    
     }
 
     &__subtitle {
@@ -439,6 +514,9 @@ border-radius: 8px;
         padding-left: 26px;
         padding-bottom: 25px;
         opacity: 0.8;
+    @media only screen and (max-width : 992px){  
+        max-width: 100%; 
+    }    
     }
 }
 
@@ -461,11 +539,21 @@ background: $card-background;
 .footer-section {
     max-width: 1440px;
     margin: 0 auto;
+@media only screen and (max-width :992px){
+    text-align: center;
+    width: 100%;
+}    
     &__left{
         float: left;
         width: 50%;
         box-sizing: border-box;
         padding-left: 25px;
+    @media only screen and (max-width :992px) {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }    
     }
 
     &__right {
@@ -475,6 +563,14 @@ background: $card-background;
         box-sizing: border-box;
         padding-right: 25px; 
         padding-top: 6px;
+    @media only screen and (max-width : 992px) {
+        float: none;
+        width: auto;
+        text-align: center;
+        display: block;
+        padding-top: 10px;
+        padding-right: 0px;
+    }    
       }
 
     a{  
@@ -490,7 +586,10 @@ background: $card-background;
     }
     .policy {
         margin-left: 48px;
-    }
+    @media  only screen and (max-width : 992px) {
+        margin-left: 0;
+      }    
+  }
     
 }
 
@@ -504,8 +603,14 @@ background: $card-background;
         line-height: 28px;   
         color: rgba(0, 0, 0, 0.5);
         padding-top: 26px;
-        padding-bottom: 10px;  
-    }
+        padding-bottom: 10px; 
+    @media only screen and (max-width : 992px) {
+        padding-top: 0px !important;
+        padding-bottom: 10px;
+        width: auto;
+        float: none;
+    }     
+}
 
     &__align-company {
         font-family: 'SourceSansPro-Regular';
@@ -516,7 +621,33 @@ background: $card-background;
         font-size: 14px;
         line-height: 18px; 
         color: rgba(0, 0, 0, 0.5);
+    @media only screen and (max-width : 992px) {
+        width: auto;
+        float: none;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+       }    
     }
+}
+
+.footer-section__right{
+ @media only screen and (max-width :992px){
+    a{
+        text-decoration: none;
+       color: rgba(0,0,0,.5);
+       font-style: normal;
+       font-size: 14px;
+       line-height: 28px;
+       display: block;
+       padding-top: 2px;
+    }
+    a{
+        display: block;
+        width: auto;
+        float: none;
+    }
+  }   
 }
 
 
@@ -539,190 +670,21 @@ input {
     position: relative;
 }
 
-@media only screen and (max-width : 600px ) , (max-width: 992px) {
+@media only screen and (max-width: 992px) {
 
-header {
-    text-align: center;
 
-    .header{
-    padding-left: 0px;
-    padding-right: 0px;
-
-    &__link-checker {
-    color: $card-background;
-    font-size: 20px;
-    width: auto;
-    padding: 1.25rem 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-        }
-
-    &__link-expire {
-    color: $card-background;
-    padding: 1.25rem 0;
-    box-sizing: border-box;
-    text-align: center;
-    width: auto;
-           }
-        }
-    }
-
-    .clearfix  {
-        display: grid;
-      }
-
-    .main-content {
-        padding: 35px;
-      }
-
-    .section-one {
-        float: none;
-        width: 100%;
-
-    form {
-         margin-top: 0px;
-
-        legend {
-         font-family: '$link-checker-font', sans-serif;;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 35px;
-        line-height: 46px;
-        color:$legend-color;
-            }
-        }
-      }
-
-    .section-two {
-    width:100%;
-    margin: 0 auto;
-
-    .card__margin-one{
-    margin-left: 0px;
-    }
-
-    .card-floats{
-    width:100% ;
-    max-width:100%;
-    text-align: center;
-          }
-
-          
-    .card__title{
-    font-family:'SourceSansPro-Regular';
-    font-weight: 600;
-    color: $card-title-color;
-    width: 100%;
-    max-width: 100%;
-    padding-left: 26px;
-    padding-top: 20px;
-    box-sizing: border-box;
-              }
-
-    .card__subtitle {
-    font-family: 'sourceSansPro-light';
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 26px;
-    color: $card-subtitle-color;
-    max-width: 100%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-left: 26px;
-    padding-bottom: 25px;
-    }
-          
-
-    .card__margin-two {
-    margin-top: 80px;
-    margin-left: 0px;
-          }
-
-    .card__margin-three {
-    margin-top: 80px;
-    margin-left: 0px;
-    margin-right: 0px;
-          }
-    .card__margin-four{
-    margin-left: 0px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-          }
-      }
-
+  
      
 
-    .section-three {
-    width: 100%;
-    margin-bottom: 50px;
-      }
+  
 
-    .margin-r49 {
-    margin-right: 0px;
-      }
-
-      
-    .footer-section {
-    text-align: center;
-    width: 100%;
-    }
-
-    .align-terms {
-    float: left;
-    width: 50%;
-    padding-top: 10px;
-    margin: 0 auto;
-    }
-
-    .footer-section__left{
-    float: none;
-    width: 100%;
-    text-align: center;
-    padding-left: 0;
-
-    &__align-copyright{
-    padding-top: 0px !important;
-    padding-bottom: 10px;
-    width: auto;
-    float: none;
-    }
-
-    &__align-company {
-    width: auto;
-    float: none;
-    padding-left: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    }
-
-    }
-
-    .footer-section__right{
-    float: none;
-    width: auto;
-    text-align: center;
-    display: block;
-    padding-top: 10px;
-    padding-right: 0px;
-
-    .policy{
-    margin-left: 0;
-     }
-
-    a{
-     text-decoration: none;
-    color: rgba(0,0,0,.5);
-    font-style: normal;
-    font-size: 14px;
-    line-height: 28px;
-    display: block;
-    padding-top: 2px;
-         }
-      }
    
-    a{
-    display: block;
-    width: auto;
-    float: none;
-       }
+      
+   
+
+ 
+  
+    
+      
+       
 } 

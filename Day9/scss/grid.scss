@@ -21,13 +21,16 @@ background: linear-gradient(180deg, #F4F5F9 0%, rgba(244, 245, 249, 0) 100%);
 header{
 background-color: $header-color;
 
+@media only screen and (max-width: 992px) {
+    text-align: center;  
+}
     
 .header {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 21px;
+    padding-right: 21px;
     box-sizing: border-box;
 
     &__link-checker {
@@ -47,8 +50,11 @@ background-color: $header-color;
     padding: 1.25rem 0rem;
     box-sizing: border-box;
     text-align: right;
-    }
-    
+    }  
+}
+@media only screen and (max-width: 992px){
+    padding-left: 0px;
+    padding-right: 0px;  
 }
 }
 
@@ -65,11 +71,14 @@ box-sizing: border-box;
 main {
     background: linear-gradient(180deg, #F4F5F9 0%, rgba(244, 245, 249, 0) 100%);
 }
-
+  
+.my-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
    
 .section-one {
-  display: grid;
-      
+  
     form {
         margin-top: 130px;
         max-width: 558px;
@@ -83,33 +92,42 @@ main {
         color: $legend-color;
         }
 
-    &__form-topic{
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        line-height: 28px;
-        color: $form-topic;
+        &__form-topic{
+            font-family: $link-checker-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 28px;
+            color: $form-topic;
+            max-width: 595px;
+            }
+            
+        &__form-label {
+            font-family: $link-checker-font;
+            margin-top: 72px;
+            margin-bottom: 14px;
         }
         
-    &__form-label {
-        margin-top: 72px;
-    }
-    
       &__input-one {
+          position: relative;
+      }
+      &__input-two {
           position: relative;
       }
       &__image-one {
           position: absolute;
+          top: 20px;
+          right: 20px;
       }
       &__image-two {
           position: absolute;
+          top: 20px;
+          right: 20px;
       }
       &__image-one {
           filter: grayscale(100%);
       }
-    input:focus {
-        input:focus::after {filter: grayscale(0)}
-    }
+  
     
     }
     
@@ -170,6 +188,7 @@ cursor: pointer;
 display: none;
 }
 input[type="checkbox"] + label {
+    font-family: $link-checker-font;
     margin: 0.2em;
     cursor: pointer;
     padding: 0.2em;
@@ -179,7 +198,7 @@ content: "\2713";
 border: 1.2px solid  $primary-blue;
 border-radius: 2px;
 display: inline-block;
-width: 1.3em;
+width: 1em;
 height: 1.3em;
 padding-left: 0.2em;
 padding-bottom: 0.3em;
@@ -188,6 +207,11 @@ vertical-align: bottom;
 color: transparent;
 transition: 0.2s;
 opacity: 0.35;
+
+@media only screen and (max-width : 992px) {
+    margin-bottom: 10px;
+}
+
 }
 
 input[type="checkbox"]:checked + label:before {
@@ -283,34 +307,33 @@ background-color: rgba(10,10,10,0.6);
 }
 
 .section-two {
-display: grid;
-
+    width: 577px;
+    column-gap: 37px;
+    margin-top: 133px;
+    margin-bottom: 116px;
 .card__margin-one {
-    margin-top: 102px;
-    margin-left: 18px;
+    margin-bottom: 37px;
 }
 
 .card__margin-two {
-margin-top: 167px;
-margin-left: 32px;
+margin-top: 37px;
 }
 .card__margin-three {
-    margin-top: -22px;
-    margin-left: 18px;
+    margin-bottom: 37px;
 }
 .card__margin-four {
-    margin-top: 36px;
-    margin-left: 36px;
-    margin-bottom: 117px;
+    margin-top: 37px; 
 }
 }
 
 .section-three {
-    display: grid;
+    
     background: $card-background;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
-    width: calc(50% - 25px);
+    /*
+    width: calc(50% - 25px); */
+   
  
 h1 {
     font-family: $link-checker-font ;
@@ -331,6 +354,7 @@ h1 {
     }
     
 p {
+    font-family: 'SourceSansPro-Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -367,9 +391,8 @@ border-radius: 8px;
 }
 .card-floats {
     padding: 10px;
-    width: calc(45% - 14px);
-    display: grid;
     max-width: 277px;
+    width: 100%;
     box-sizing: border-box;
 }
 .card {
@@ -428,25 +451,27 @@ background: $card-background;
     max-width: 1440px;
     margin: 0 auto;
     &__left{
-       display: grid;
+       
         box-sizing: border-box;
         padding-left: 25px;
     }
 
     &__right {
-        display: grid;
+      
         text-align: right; 
         box-sizing: border-box;
-        padding-right: 25px; 
+        padding-right: 25px;
+        padding-top: 6px; 
       }
 
     a{
-        text-decoration: none;
-        color: rgba(0,0,0,.5);
+        font-family: 'SourceSansPro-Regular';
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
         line-height: 28px;
+        text-decoration: none;
+        color: rgba(0,0,0,.5);
         display: inline-block;
         padding-top: 36px;
     }
@@ -460,14 +485,25 @@ background: $card-background;
 .footer-section__left {
 
     &__align-copyright{
+        font-family: 'SourceSansPro-Regular';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;   
+        color: rgba(0, 0, 0, 0.5);
         padding-top: 25px;
         padding-bottom: 10px;  
     }
 
     &__align-company {
+        font-family: 'SourceSansPro-Regular';
+        padding-top: 2px;
+        padding-bottom: 26px;
         font-style: italic;
-        font-weight: 400;
-        line-height: 18px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px; 
+        color: rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -490,7 +526,8 @@ input {
     position: relative;
 }
 
-@media only screen and (max-width : 600px ) , (max-width: 992px) {
+@media only screen and (max-width: 992px) {
+
 
 header {
     text-align: center;
@@ -518,8 +555,8 @@ header {
         }
     }
 
-    .clearfix  {
-        display: grid;
+    .my-grid  {
+       grid-template-columns: auto;
       }
 
     .main-content {
@@ -527,7 +564,7 @@ header {
       }
 
     .section-one {
-        display: grid;
+       
 
     form {
          margin-top: 0px;
