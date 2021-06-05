@@ -353,7 +353,8 @@ h1 {
     }
     
     h3 {
-        font-style: normal;
+    font-family:'Poppins';
+    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
@@ -362,6 +363,7 @@ h1 {
     }
     
 p {
+    font-family: 'SourceSansPro-Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -475,17 +477,17 @@ background: $card-background;
         padding-top: 6px;
       }
 
-    a{
-        text-decoration: none;
-        color: rgba(0,0,0,.5);
+    a{  
+        font-family: 'SourceSansPro-Regular';
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
         line-height: 28px;
+        text-decoration: none;
+        color: rgba(0,0,0,.5);
         display: inline-block;
         padding-top: 36px;
     }
-
     .policy {
         margin-left: 48px;
     }
@@ -495,16 +497,25 @@ background: $card-background;
 .footer-section__left {
 
     &__align-copyright{
+        font-family: 'SourceSansPro-Regular';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;   
+        color: rgba(0, 0, 0, 0.5);
         padding-top: 26px;
         padding-bottom: 10px;  
     }
 
     &__align-company {
+        font-family: 'SourceSansPro-Regular';
         padding-top: 2px;
         padding-bottom: 26px;
         font-style: italic;
-        font-weight: 400;
-        line-height: 18px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px; 
+        color: rgba(0, 0, 0, 0.5);
     }
 }
 
