@@ -77,13 +77,17 @@ main {
     line-height: 46px;
     color: #0A1D41; }
   .section-one__form-topic {
+    font-family: "SourceSansPro-Regular";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 17px;
     line-height: 28px;
-    color: #292929; }
+    color: #292929;
+    max-width: 595px; }
   .section-one__form-label {
-    margin-top: 72px; }
+    font-family: "SourceSansPro-Regular";
+    margin-top: 72px;
+    margin-bottom: 14px; }
   .section-one__input-one {
     position: relative; }
   .section-one__input-two {
@@ -160,6 +164,7 @@ input[type="checkbox"] {
   display: none; }
 
 input[type="checkbox"] + label {
+  font-family: "SourceSansPro-Regular";
   margin: 0.2em;
   cursor: pointer;
   padding: 0.2em; }
@@ -288,7 +293,7 @@ input[name="submit"] {
     margin-top: 167px;
     margin-left: 32px; }
   .section-two .card__margin-three {
-    margin-top: -22px;
+    margin-top: -44px;
     margin-left: 18px; }
   .section-two .card__margin-four {
     margin-top: 36px;
@@ -318,7 +323,8 @@ input[name="submit"] {
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-    color: #1770F9; }
+    color: #1770F9;
+    padding: 15px 0 7px 0px; }
   .section-three p {
     font-style: normal;
     font-weight: normal;
@@ -550,15 +556,17 @@ input {
     width: 100%;
     text-align: center;
     padding-left: 0; }
-    .footer-section__left__align-copright {
+    .footer-section__left__align-copyright {
+      padding-top: 0px !important;
+      padding-bottom: 10px;
       width: auto;
-      float: none;
-      padding: 0px; }
+      float: none; }
     .footer-section__left__align-company {
       width: auto;
       float: none;
       padding-left: 0px;
-      padding-top: 10px; }
+      padding-top: 0px;
+      padding-bottom: 0px; }
   .footer-section__right {
     float: none;
     width: auto;

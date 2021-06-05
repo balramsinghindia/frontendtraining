@@ -96,16 +96,19 @@ main {
         }
 
     &__form-topic{
+        font-family: $link-checker-font;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 17px;
         line-height: 28px;
         color: $form-topic;
+        max-width: 595px;
         }
         
     &__form-label {
+        font-family: $link-checker-font;
         margin-top: 72px;
-        margin-bottom: 10px;
+        margin-bottom: 14px;
     }
     
       &__input-one {
@@ -194,6 +197,7 @@ cursor: pointer;
 display: none;
 }
 input[type="checkbox"] + label {
+    font-family: $link-checker-font;
     margin: 0.2em;
     cursor: pointer;
     padding: 0.2em;
@@ -320,7 +324,7 @@ margin-top: 167px;
 margin-left: 32px;
 }
 .card__margin-three {
-    margin-top: -22px;
+    margin-top: -44px;
     margin-left: 18px;
 }
 .card__margin-four {
@@ -349,11 +353,12 @@ h1 {
     }
     
     h3 {
-    font-style: normal;
+        font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
     color: $primary-blue;
+    padding: 15px 0 7px 0px;
     }
     
 p {
@@ -664,17 +669,19 @@ header {
     text-align: center;
     padding-left: 0;
 
-    &__align-copright{
+    &__align-copyright{
+    padding-top: 0px !important;
+    padding-bottom: 10px;
     width: auto;
     float: none;
-    padding: 0px;
     }
 
     &__align-company {
     width: auto;
     float: none;
     padding-left: 0px;
-    padding-top: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     }
 
     }
