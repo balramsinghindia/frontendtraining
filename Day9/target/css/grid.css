@@ -391,6 +391,10 @@ input[name="submit"] {
     .margin-r49 {
       margin-right: 0; } }
 
+@media only screen and (max-width: 992px) {
+  .mr-bottom {
+    margin-bottom: 0; } }
+
 .background3-4 {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);

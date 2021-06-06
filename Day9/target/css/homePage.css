@@ -319,26 +319,29 @@ input[name="submit"] {
   @media only screen and (max-width: 992px) {
     .section-two {
       width: 100%;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      margin-top: 37px !important;
+      margin-bottom: 12px !important; } }
   .section-two .card__margin-one {
     margin-top: 102px;
     margin-left: 18px; }
     @media only screen and (max-width: 992px) {
       .section-two .card__margin-one {
-        margin-left: 0px; } }
+        margin-left: 0px;
+        margin-top: 0px; } }
   .section-two .card__margin-two {
     margin-top: 167px;
     margin-left: 32px; }
     @media only screen and (max-width: 992px) {
       .section-two .card__margin-two {
-        margin-top: 80px;
+        margin-top: 37px;
         margin-left: 0px; } }
   .section-two .card__margin-three {
     margin-top: -44px;
     margin-left: 18px; }
     @media only screen and (max-width: 992px) {
       .section-two .card__margin-three {
-        margin-top: 80px;
+        margin-top: 37px;
         margin-left: 0px;
         margin-right: 0px; } }
   .section-two .card__margin-four {
@@ -348,8 +351,8 @@ input[name="submit"] {
     @media only screen and (max-width: 992px) {
       .section-two .card__margin-four {
         margin-left: 0px;
-        margin-top: 80px;
-        margin-bottom: 80px; } }
+        margin-top: 37px;
+        margin-bottom: 37px; } }
 
 .section-three {
   width: 50%;
@@ -397,6 +400,10 @@ input[name="submit"] {
   @media only screen and (max-width: 992px) {
     .margin-r49 {
       margin-right: 0px; } }
+
+@media only screen and (max-width: 992px) {
+  .mr-bottom {
+    margin-bottom: 0; } }
 
 .background3-4 {
   background: #FFFFFF;
