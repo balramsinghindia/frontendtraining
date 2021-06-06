@@ -215,6 +215,9 @@ input[type="checkbox"] + label:before {
   -o-transition: 0.2s;
   transition: 0.2s;
   opacity: 0.35; }
+  @media only screen and (max-width: 992px) {
+    input[type="checkbox"] + label:before {
+      margin-bottom: 5px; } }
 
 input[type="checkbox"]:checked + label:before {
   background-color: #1770F9;
@@ -569,13 +572,6 @@ footer {
     display: block;
     width: auto;
     float: none; } }
-
-.align-terms {
-  float: left;
-  width: 50%;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 26px; }
 
 input::after {
   content: "" !important;
