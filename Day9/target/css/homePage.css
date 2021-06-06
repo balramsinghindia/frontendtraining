@@ -383,7 +383,8 @@ input[name="submit"] {
     font-size: 20px;
     line-height: 30px;
     color: #1770F9;
-    padding: 15px 0 7px 0px; }
+    padding-top: 15px;
+    padding-bottom: 7px; }
   .section-three p {
     font-family: 'SourceSansPro-Regular';
     font-style: normal;

@@ -373,7 +373,9 @@ input[name="submit"] {
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-    color: #1770F9; }
+    color: #1770F9;
+    padding-top: 15px;
+    padding-bottom: 7px; }
   .section-three p {
     font-family: 'SourceSansPro-Regular';
     font-style: normal;
@@ -422,6 +424,12 @@ box-shadow: 10px 10px 10px 10px #888888;
   padding-left: 26px;
   padding-top: 32px; }
 
+@media only screen and (max-width: 992px) {
+  .card {
+    text-align: center; }
+    .card img {
+      padding-left: 0; } }
+
 .card__title {
   font-family: 'SourceSansPro-Regular';
   font-style: normal;
@@ -432,11 +440,15 @@ box-shadow: 10px 10px 10px 10px #888888;
   max-width: 255px;
   padding-left: 26px;
   padding-top: 20px;
+  padding-bottom: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   @media only screen and (max-width: 992px) {
     .card__title {
-      max-width: 100%; } }
+      max-width: 100%;
+      width: 100%;
+      max-width: 100%;
+      padding-left: 0; } }
 
 .card__subtitle {
   font-family: 'sourceSansPro-light';
@@ -452,7 +464,8 @@ box-shadow: 10px 10px 10px 10px #888888;
   opacity: 0.8; }
   @media only screen and (max-width: 992px) {
     .card__subtitle {
-      max-width: 100%; } }
+      max-width: 100%;
+      padding-left: 0; } }
 
 strong {
   font-weight: 600; }
