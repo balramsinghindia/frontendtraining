@@ -8,10 +8,7 @@
   src: url("../../fonts/SourceSansPro-Regular.ttf"); }
 
 body {
-  position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F4F5F9), to(rgba(244, 245, 249, 0)));
-  background: -o-linear-gradient(top, #F4F5F9 0%, rgba(244, 245, 249, 0) 100%);
-  background: linear-gradient(180deg, #F4F5F9 0%, rgba(244, 245, 249, 0) 100%); }
+  position: relative; }
 
 header {
   background-color: #0D2450; }
@@ -26,21 +23,31 @@ header {
     padding-right: 21px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
+    @media only screen and (max-width: 992px) {
+      header .header {
+        padding-left: 0px;
+        padding-right: 0px; } }
     header .header__link-checker {
-      display: grid;
       color: #FFFFFF;
       font-size: 20px;
       padding: 1.25rem 0rem;
       -webkit-box-sizing: border-box;
               box-sizing: border-box; }
+      @media only screen and (max-width: 992px) {
+        header .header__link-checker {
+          width: auto; } }
     header .header__link-expire {
-      display: grid;
       color: #FFFFFF;
       padding: 1.25rem 0rem;
       padding-right: 30px;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       text-align: right; }
+      @media only screen and (max-width: 992px) {
+        header .header__link-expire {
+          text-align: center;
+          width: auto;
+          padding-right: 0; } }
   @media only screen and (max-width: 992px) {
     header {
       padding-left: 0px;
@@ -53,25 +60,34 @@ header {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  @media only screen and (max-width: 992px) {
+    .main-content {
+      padding: 35px; } }
 
 main {
-  background: -webkit-gradient(linear, left top, left bottom, from(#F4F5F9), to(rgba(244, 245, 249, 0)));
-  background: -o-linear-gradient(top, #F4F5F9 0%, rgba(244, 245, 249, 0) 100%);
-  background: linear-gradient(180deg, #F4F5F9 0%, rgba(244, 245, 249, 0) 100%); }
+  background: -webkit-gradient(linear, left top, left bottom, from(#ebf1ffcf), to(#f4f5f9));
+  background: -o-linear-gradient(#ebf1ffcf 0%, #f4f5f9 100%);
+  background: linear-gradient(#ebf1ffcf 0%, #f4f5f9 100%); }
 
 .my-grid {
   display: grid;
   grid-template-columns: auto auto; }
+  @media only screen and (max-width: 992px) {
+    .my-grid {
+      grid-template-columns: auto; } }
 
 .section-one form {
   margin-top: 130px;
   max-width: 558px; }
+  @media only screen and (max-width: 992px) {
+    .section-one form {
+      margin-top: 0px; } }
 
 .section-one legend {
   font-family: "SourceSansPro-Regular";
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 35px;
   line-height: 46px;
   color: #0A1D41; }
 
@@ -108,6 +124,9 @@ main {
 .section-one__image-one {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%); }
+
+input {
+  position: relative; }
 
 input[type="email"] {
   font-style: normal;
@@ -186,7 +205,7 @@ input[type="checkbox"] + label:before {
   opacity: 0.35; }
   @media only screen and (max-width: 992px) {
     input[type="checkbox"] + label:before {
-      margin-bottom: 10px; } }
+      margin-bottom: 3px; } }
 
 input[type="checkbox"]:checked + label:before {
   background-color: #1770F9;
@@ -299,12 +318,20 @@ input[name="submit"] {
   margin-left: 173px; }
   @media only screen and (max-width: 992px) {
     .section-two {
+      width: 100%;
+      margin: 0 auto;
       margin-top: 37px !important;
       margin-bottom: 12px !important; } }
+  @media only screen and (max-width: 992px) {
+    .section-two .card-floats {
+      width: 100%;
+      max-width: 100%;
+      text-align: center; } }
   .section-two .card__margin-one {
     margin-bottom: 37px; }
     @media only screen and (max-width: 992px) {
       .section-two .card__margin-one {
+        margin-left: 0px;
         margin-bottom: 0; } }
   .section-two .card__margin-two {
     margin-top: 37px; }
@@ -330,6 +357,10 @@ input[name="submit"] {
   padding: 25px 25px 71px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  @media only screen and (max-width: 992px) {
+    .section-three {
+      width: 100%;
+      margin-bottom: 50px; } }
   .section-three h1 {
     font-family: "SourceSansPro-Regular";
     font-style: normal;
@@ -356,6 +387,9 @@ input[name="submit"] {
 .margin-r49 {
   margin-right: 49px;
   margin-bottom: 50px; }
+  @media only screen and (max-width: 992px) {
+    .margin-r49 {
+      margin-right: 0; } }
 
 .background3-4 {
   background: #FFFFFF;
@@ -396,6 +430,9 @@ box-shadow: 10px 10px 10px 10px #888888;
   padding-top: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  @media only screen and (max-width: 992px) {
+    .card__title {
+      max-width: 100%; } }
 
 .card__subtitle {
   font-family: 'sourceSansPro-light';
@@ -409,6 +446,9 @@ box-shadow: 10px 10px 10px 10px #888888;
   padding-left: 26px;
   padding-bottom: 25px;
   opacity: 0.8; }
+  @media only screen and (max-width: 992px) {
+    .card__subtitle {
+      max-width: 100%; } }
 
 strong {
   font-weight: 600; }
@@ -426,6 +466,10 @@ footer {
 .footer-section {
   max-width: 1440px;
   margin: 0 auto; }
+  @media only screen and (max-width: 992px) {
+    .footer-section {
+      text-align: center;
+      width: 100%; } }
   .footer-section__left {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -436,18 +480,41 @@ footer {
             box-sizing: border-box;
     padding-right: 79px;
     padding-top: 6px; }
-  .footer-section a {
-    font-family: 'SourceSansPro-Regular';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 28px;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding-top: 36px; }
-  .footer-section .policy {
-    margin-left: 48px; }
+    @media only screen and (max-width: 992px) {
+      .footer-section__right {
+        text-align: center;
+        display: block;
+        padding-top: 0px;
+        padding-right: 0px; }
+        .footer-section__right .policy {
+          margin-left: 48px; } }
+    @media only screen and (max-width: 992px) and (max-width: 992px) {
+      .footer-section__right .policy {
+        margin-left: 0; } }
+    @media only screen and (max-width: 992px) {
+        .footer-section__right a {
+          font-family: 'SourceSansPro-Regular';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 28px;
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.5);
+          display: inline-block;
+          padding-top: 36px; } }
+    @media only screen and (max-width: 992px) and (max-width: 992px) {
+      .footer-section__right a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.5);
+        font-style: normal;
+        font-size: 14px;
+        line-height: 28px;
+        display: block;
+        padding-top: 2px; } }
+
+@media only screen and (max-width: 992px) {
+  .footer-section__left {
+    padding-left: 0px; } }
 
 .footer-section__left__align-copyright {
   font-family: 'SourceSansPro-Regular';
@@ -458,6 +525,10 @@ footer {
   color: rgba(0, 0, 0, 0.5);
   padding-top: 25px;
   padding-bottom: 10px; }
+  @media only screen and (max-width: 992px) {
+    .footer-section__left__align-copyright {
+      padding-top: 0px;
+      padding-bottom: 0px; } }
 
 .footer-section__left__align-company {
   font-family: 'SourceSansPro-Regular';
@@ -468,118 +539,8 @@ footer {
   font-size: 14px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.5); }
-
-.align-terms {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 26px; }
-
-input::after {
-  content: "" !important;
-  position: absolute;
-  background-image: url("https://linkchecker.netlify.app/day-9/images/input-message.jpg"); }
-
-input {
-  position: relative; }
-
-@media only screen and (max-width: 992px) {
-  header {
-    text-align: center; }
-    header .header {
-      padding-left: 0px;
-      padding-right: 0px; }
-      header .header__link-checker {
-        color: #FFFFFF;
-        font-size: 20px;
-        width: auto;
-        padding: 1.25rem 0;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box; }
-      header .header__link-expire {
-        color: #FFFFFF;
-        padding: 1.25rem 0;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        text-align: center;
-        width: auto; }
-  .my-grid {
-    grid-template-columns: auto; }
-  .main-content {
-    padding: 35px; }
-  .section-one form {
-    margin-top: 0px; }
-    .section-one form legend {
-      font-family: '$link-checker-font', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 35px;
-      line-height: 46px;
-      color: #0A1D41; }
-  .section-two {
-    width: 100%;
-    margin: 0 auto; }
-    .section-two .card__margin-one {
-      margin-left: 0px; }
-    .section-two .card-floats {
-      width: 100%;
-      max-width: 100%;
-      text-align: center; }
-    .section-two .card__title {
-      font-family: 'SourceSansPro-Regular';
-      font-weight: 600;
-      color: #0A1D41;
-      width: 100%;
-      max-width: 100%;
-      padding-left: 26px;
-      padding-top: 20px;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
-    .section-two .card__subtitle {
-      font-family: 'sourceSansPro-light';
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 26px;
-      color: #292929;
-      max-width: 100%;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      padding-left: 26px;
-      padding-bottom: 25px; }
-  .section-three {
-    width: 100%;
-    margin-bottom: 50px; }
-  .margin-r49 {
-    margin-right: 0px; }
-  .footer-section {
-    text-align: center;
-    width: 100%; }
-  .align-terms {
-    display: grid;
-    padding-top: 10px;
-    margin: 0 auto; }
-  .footer-section__left {
-    padding-left: 0px; }
-    .footer-section__left__align-copyright {
-      padding-top: 0px;
-      padding-bottom: 0px; }
+  @media only screen and (max-width: 992px) {
     .footer-section__left__align-company {
       padding-left: 0px;
       padding-top: 0px;
-      padding-bottom: 0px; }
-  .footer-section__right {
-    text-align: center;
-    display: block;
-    padding-top: 0px;
-    padding-right: 0px; }
-    .footer-section__right .policy {
-      margin-left: 0; }
-    .footer-section__right a {
-      text-decoration: none;
-      color: rgba(0, 0, 0, 0.5);
-      font-style: normal;
-      font-size: 14px;
-      line-height: 28px;
-      display: block;
-      padding-top: 2px; }
-  a {
-    display: block; } }
+      padding-bottom: 0px; } }
