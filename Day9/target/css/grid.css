@@ -484,37 +484,37 @@ footer {
             box-sizing: border-box;
     padding-right: 79px;
     padding-top: 6px; }
+    .footer-section__right a {
+      font-family: 'SourceSansPro-Regular';
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 28px;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding-top: 36px; }
+      @media only screen and (max-width: 992px) {
+        .footer-section__right a {
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.5);
+          font-style: normal;
+          font-size: 14px;
+          line-height: 28px;
+          display: block;
+          padding-top: 2px; } }
+    .footer-section__right .policy {
+      margin-left: 48px; }
+      @media only screen and (max-width: 992px) {
+        .footer-section__right .policy {
+          margin-left: 0; } }
     @media only screen and (max-width: 992px) {
       .footer-section__right {
         text-align: center;
         display: block;
         padding-top: 0px;
-        padding-right: 0px; }
-        .footer-section__right .policy {
-          margin-left: 48px; } }
-    @media only screen and (max-width: 992px) and (max-width: 992px) {
-      .footer-section__right .policy {
-        margin-left: 0; } }
-    @media only screen and (max-width: 992px) {
-        .footer-section__right a {
-          font-family: 'SourceSansPro-Regular';
-          font-style: normal;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 28px;
-          text-decoration: none;
-          color: rgba(0, 0, 0, 0.5);
-          display: inline-block;
-          padding-top: 36px; } }
-    @media only screen and (max-width: 992px) and (max-width: 992px) {
-      .footer-section__right a {
-        text-decoration: none;
-        color: rgba(0, 0, 0, 0.5);
-        font-style: normal;
-        font-size: 14px;
-        line-height: 28px;
-        display: block;
-        padding-top: 2px; } }
+        padding-right: 0px; } }
 
 @media only screen and (max-width: 992px) {
   .footer-section__left {
